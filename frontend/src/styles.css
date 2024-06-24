@@ -1,0 +1,110 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ececec, #f5f5f5);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .chat-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .Column {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .Content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 600px;
+  }
+  
+  .message {
+    margin-bottom: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .message.assistant {
+    align-self: flex-start;
+    background-color: #e9e9eb;
+    color: black;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input:focus {
+    border-color: #007bff;
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background-color: #0056b3;
+  }
+  
