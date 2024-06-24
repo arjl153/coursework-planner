@@ -6,6 +6,27 @@
 
 The Academic Coursework Planner project aims to answer questions related to Indiana University Bloomington by integrating GPT (Generative Pre-trained Transformer) and Pinecone for efficient data querying and embedding. This project leverages several Python scripts and Jupyter notebooks to preprocess data, create embeddings, and expose a Flask API for interaction.
 
+## Instructions to Run the Project
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/academic-coursework-planner.git
+   cd academic-coursework-planner
+2. **Add keys**
+   - Create `.env` file and add the following keys: `OPENAI_API_KEY` `OPENAI_API_ORG` `PINECONE_API_KEY`
+
+3. **Run the Jupyter Notebooks**
+   - Open each notebook (`course_text_creation.ipynb`, `preprocess_prof.ipynb`, `testing_ai.ipynb`) and run the cells to preprocess data and create embeddings.
+
+4. **Start the Flask API**
+
+   ```bash
+   python app.py
+
+5. **Access the API**
+   - The API will be available at `http://127.0.0.1:5001/`. You can send requests to this endpoint to get responses based on the embedded data and GPT model.
+
 ## File Descriptions
 
 1. **app.py**
@@ -22,24 +43,6 @@ The Academic Coursework Planner project aims to answer questions related to Indi
 
 5. **testing_ai.ipynb**
    - This notebook is used for testing the AI model's performance. It includes code for querying the embeddings and evaluating the responses from the GPT model.
-
-## Instructions to Run the Project
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/academic-coursework-planner.git
-   cd academic-coursework-planner
-2. **Run the Jupyter Notebooks**
-   - Open each notebook (`course_text_creation.ipynb`, `preprocess_prof.ipynb`, `testing_ai.ipynb`) and run the cells to preprocess data and create embeddings.
-
-3. **Start the Flask API**
-
-   ```bash
-   python app.py
-
-4. **Access the API**
-   - The API will be available at `http://127.0.0.1:5001/`. You can send requests to this endpoint to get responses based on the embedded data and GPT model.
   
 ## Issues Faced and Solutions
 1. **Shorthand Notation of Days**
