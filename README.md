@@ -6,6 +6,8 @@
 
 The Academic Coursework Planner project aims to answer questions related to Indiana University Bloomington by integrating GPT (Generative Pre-trained Transformer) and Pinecone for efficient data querying and embedding. This project leverages several Python scripts and Jupyter notebooks to preprocess data, create embeddings, and expose a Flask API for interaction.
 
+Additionally, it employs **Retrieval-Augmented Generation (RAG)** to enhance the query response process by combining retrieval of relevant information from Pinecone with the generative capabilities of GPT-4
+
 ## Instructions to Run the Project
 
 1. **Clone the Repository**
